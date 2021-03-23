@@ -1,0 +1,47 @@
+h1{
+    color: red;   
+    background-color: lightgreen;
+}
+/*universal selectors*/
+*{
+    font-style:italic;
+}
+/*element selector=by writingthe name of tag eg h1,p,thead,.
+.element will get selected and we canmake any changes*/
+h1{
+    background-color:lightblue;
+    color: black;
+}
+p{
+    font-size: 20px;
+}
+.para{
+    color: green;
+}
+#unique{
+    background-color: lightblue;
+}
+/*attribute selector eg class,unique,href,id....*/
+a[href]{
+    text-decoration: none;
+}
+p[class="para"]
+{
+    border: 1px solid;
+}
+/*combinators*/
+/*sibling combitator*/h6+p{
+    font-weight: bold;
+}
+p+p{
+    background-color: magenta;
+    color: maroon;
+}
+/*children selector eg f element having elemet ie div having p for selecting this*/
+div>p{
+    color: grey;
+}
+/*decendent selector*/
+ul a{
+    color: purple;
+}
